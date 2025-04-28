@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org"
+	th:replace="~{base::Layout(~{::section})}">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<section>
+		<div
+			class="container-fluid bg-primary p-5 mt-5 d-flex justify-content-center">
+			<div class="card shadow-lg p-4 bg-light"
+				style="max-width: 600px; width: 100%;">
+				<h4 class="text-center text-primary mb-3">
+					<i class="fa-solid fa-search"></i> Search for Products
+				</h4>
+				<form>
+					<div class="input-group">
+						<input type="text" class="form-control form-control-lg"
+							placeholder="Search here..." name="ch">
+						<button class="btn btn-primary">
+							<i class="fa-solid fa-magnifying-glass"></i> Search
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="container-fluid mt-1">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="list-group">
+						<button type="button"
+							class="list-group-item list-group-item-action active"
+							aria-current="true">Categories</button>
+						<button type="button"
+							class="list-group-item list-group-item-action">Electronics</button>
+						<button type="button"
+							class="list-group-item list-group-item-action">Mobile
+							Phone</button>
+						<button type="button"
+							class="list-group-item list-group-item-action">Clothes</button>
+					</div>
+				</div>
+				<div class="col-md-10">
+					<div class="card">
+						<div class="card-body">
+							<p class="fs-3 text-center">Products</p>
+
+							<div class="col-md-10">
+								<div class="card">
+									<div class="card-body">
+										<p class="fs-3 text-center">Products</p>
+
+										<div class="row">
+											<!-- Product 1: MacBook Pro -->
+											<div class="col-md-3 mb-3">
+												<div class="card">
+													<div class="card-body text-center">
+														<img src="img/new/laptop.jpg" width="100%" height="150px"
+															alt="MacBook Pro">
+														<p class="fs-5 text-center">MacBook Pro</p>
+														<p class="fs-6 fw-bold">
+															<i class="fa-solid fa-indian-rupee-sign"></i>1,50,000 <span
+																class="fs-6 text-success">10% off</span>
+														</p>
+														<a href="/product" class="btn btn-primary">View details</a>
+													</div>
+												</div>
+											</div>
+
+											<!-- Product 2: Apple M2 2023 -->
+											<div class="col-md-3 mb-3">
+												<div class="card">
+													<div class="card-body text-center">
+														<img src="img/new/laptop.jpg" width="100%" height="150px"
+															alt="Apple M2 2023">
+														<p class="fs-5 text-center">Apple M2 2023</p>
+														<p class="fs-6 fw-bold">
+															<i class="fa-solid fa-indian-rupee-sign"></i>1,20,000 <span
+																class="fs-6 text-success">15% off</span>
+														</p>
+														<a class="btn btn-primary">View details</a>
+													</div>
+												</div>
+											</div>
+
+											<!-- Product 3: iPhone 14 pro -->
+											<div class="col-md-3 mb-3">
+												<div class="card">
+													<div class="card-body text-center">
+														<img src="img/new/iphone 14.jpg" width="100%"
+															height="150px" alt="iPhone 15 Pro Plus">
+														<p class="fs-5 text-center">iPhone 14 pro</p>
+														<p class="fs-6 fw-bold">
+															<i class="fa-solid fa-indian-rupee-sign"></i>1,40,000 <span
+																class="fs-6 text-success">12% off</span>
+														</p>
+														<a class="btn btn-primary">View details</a>
+													</div>
+												</div>
+											</div>
+
+											<!-- Product 4: Asus Monitor -->
+											<div class="col-md-3 mb-3">
+												<div class="card">
+													<div class="card-body text-center">
+														<img src="img/new/monitor.jpg" width="100%"
+															height="150px" alt="Asus Monitor">
+														<p class="fs-5 text-center">Asus Monitor</p>
+														<p class="fs-6 fw-bold">
+															<i class="fa-solid fa-indian-rupee-sign"></i>25,000 <span
+																class="fs-6 text-success">20% off</span>
+														</p>
+														<a class="btn btn-primary">View details</a>
+													</div>
+												</div>
+											</div>
+
+											<!-- Product 5: LG 23' TV -->
+											<div class="col-md-3 mb-3">
+												<div class="card">
+													<div class="card-body text-center">
+														<img src="img/new/Lgtv.png" width="100%" height="150px"
+															alt="LG 23' TV">
+														<p class="fs-5 text-center">LG 23' TV</p>
+														<p class="fs-6 fw-bold">
+															<i class="fa-solid fa-indian-rupee-sign"></i>30,000 <span
+																class="fs-6 text-success">18% off</span>
+														</p>
+														<a class="btn btn-primary">View details</a>
+													</div>
+												</div>
+											</div>
+
+											<!-- Product 6: Printed Shirt -->
+											<div class="col-md-3 mb-3">
+												<div class="card">
+													<div class="card-body text-center">
+														<img src="img/new/printed short.jfif" width="100%"
+															height="150px" alt="Printed Shirt">
+														<p class="fs-5 text-center">Printed Shirt</p>
+														<p class="fs-6 fw-bold">
+															<i class="fa-solid fa-indian-rupee-sign"></i>1,500 <span
+																class="fs-6 text-success">30% off</span>
+														</p>
+														<a class="btn btn-primary">View details</a>
+													</div>
+												</div>
+											</div>
+
+											<!-- Product 7: OnePlus Nord CE 2 -->
+											<div class="col-md-3 mb-3">
+												<div class="card">
+													<div class="card-body text-center">
+														<img src="img/new/oneplus mobile.jpg" width="100%" height="150px"
+															alt="OnePlus Nord CE 2">
+														<p class="fs-5 text-center">OnePlus Nord CE 2</p>
+														<p class="fs-6 fw-bold">
+															<i class="fa-solid fa-indian-rupee-sign"></i>23,000 <span
+																class="fs-6 text-success">25% off</span>
+														</p>
+														<a class="btn btn-primary">View details</a>
+													</div>
+												</div>
+											</div>
+
+											<!-- Product 8: Panasonic AC -->
+											<div class="col-md-3 mb-3">
+												<div class="card">
+													<div class="card-body text-center">
+														<img src="img/new/fridge.png" width="100%" height="150px"
+															alt="Panasonic AC">
+														<p class="fs-5 text-center">Chroma Fridge</p>
+														<p class="fs-6 fw-bold">
+															<i class="fa-solid fa-indian-rupee-sign"></i>45,000 <span
+																class="fs-6 text-success">22% off</span>
+														</p>
+														<a class="btn btn-primary">View details</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+</body>
+</html>

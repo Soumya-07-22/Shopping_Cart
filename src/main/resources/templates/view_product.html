@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org"
+	th:replace="~{base::Layout(~{::section})}">
+<head>
+<meta charset="UTF-8">
+<title>View Product</title>
+</head>
+<body style="background-color: #f5f5f5;">
+    <section>
+        <div class="container card-sh border rounded shadow-lg p-4" style="margin-top: 70px; background-color: white;">
+            <div class="row align-items-center">
+                <!-- Left Column: Product Image -->
+                <div class="col-md-6 text-end">
+                    <img alt="Laptop Image" src="/img/new/laptop.jpg" class="rounded shadow" width="350px" height="400px">
+                </div>
+
+                <!-- Right Column: Product Details -->
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-3 text-primary">MacBook Pro 2023</h2>
+
+                    <p class="text-muted">
+                        Experience the power of the latest <strong>M2 chip</strong> and a sleek design. This laptop offers superior performance for work and entertainment, with extended battery life, stunning display clarity, and a premium build quality.
+                    </p>
+
+                    <ul class="list-unstyled">
+                        <li><strong>Processor:</strong> M2 Chip, 8-Core CPU</li>
+                        <li><strong>Memory:</strong> 16 GB Unified RAM</li>
+                        <li><strong>Storage:</strong> 512 GB SSD</li>
+                        <li><strong>Battery:</strong> Up to 18 hours</li>
+                    </ul>
+
+                    <!-- Price and Discount -->
+                    <p class="fs-4 fw-bold text-success my-3">
+                        <i class="fa-solid fa-indian-rupee-sign"></i> 1,50,000 <span class="text-danger">10% off</span>
+                    </p>
+
+                    <!-- Availability Status -->
+                    <p class="text-success fw-bold">
+                        <i class="fa-solid fa-check-circle"></i> In Stock - Available Now
+                    </p>
+
+                    <!-- Product Features with Icons -->
+                    <div class="d-flex justify-content-start my-4">
+                        <p class="me-4">
+                            <i class="fa-solid fa-truck-fast text-primary"></i> Free Shipping
+                        </p>
+                        <p class="me-4">
+                            <i class="fa-solid fa-money-bill-wave text-success"></i> Cash on Delivery
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-arrow-rotate-left text-warning"></i> 7-Day Easy Return
+                        </p>
+                    </div>
+
+                    <!-- Buttons: Buy Now and Add to Cart -->
+                    <div class="mt-3 d-flex">
+                        <button class="btn btn-primary btn-lg me-3 px-4 py-2 shadow-sm">
+                            <i class="fa-solid fa-cart-shopping"></i> Buy Now
+                        </button>
+                        <button class="btn btn-outline-secondary btn-lg px-4 py-2 shadow-sm">
+                            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
